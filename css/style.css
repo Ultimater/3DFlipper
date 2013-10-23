@@ -22,6 +22,7 @@ li {
     width:100px;
     height:100px;
     position:relative;
+    counter-increment: item;
 }
 
 li div {
@@ -48,6 +49,10 @@ li:hover .front {
 
 li:hover .back {
     -webkit-transform:rotateY(0);
+}
+
+li .front:after{
+    content: counter(item);   
 }
 
 .back {
