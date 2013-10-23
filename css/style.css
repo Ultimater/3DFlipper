@@ -10,6 +10,7 @@ img {
 
 ul {
 	-webkit-perspective: 600;
+    perspective: 600;
 }
 
 li {
